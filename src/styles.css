@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+#SearchWrapper {
+    margin: 1%;
+}
+
+.citySelect{
+    margin-right: 1%
+}
+.tableWrapper{
+    margin-top: 4%; 
+}
+.fav{
+    color: red;
+    cursor: pointer;
+}
