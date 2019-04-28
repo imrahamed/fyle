@@ -20,7 +20,7 @@
     </div>
 
     <div class="tableWrapper">
-        <nz-table #basicTable [nzData]="data | search : searchText" [nzLoading]="loading">
+        <nz-table #basicTable [nzData]="data | search : searchText" [nzLoading]="loading" [nzShowSizeChanger]="true">
             <thead>
               <tr>
                 <th>Name</th>

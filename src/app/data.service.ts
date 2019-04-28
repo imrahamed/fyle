@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-
+  cachedData: any = {};
   constructor(private http: HttpClient) { }
 
   public getBanks(city){

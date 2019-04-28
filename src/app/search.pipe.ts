@@ -10,7 +10,11 @@ export class SearchPipe implements PipeTransform {
     if (!searchText) return items;
     searchText = searchText.toLowerCase();
     return items.filter(it => {
-      return it.bank_name.toLowerCase().includes(searchText);
+      return Object.keys(it).some(k => {
+        // console.log(it[k]);
+        return it[k] && String(it[k]).toLowerCase().includes(searchText)
+      }
+      );
     });
   }
 }

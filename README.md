@@ -1,6 +1,6 @@
 # Fyle
 
-Demo url: http://vacuous-limit.surge.sh
+Demo url: http://woozy-milk.surge.sh
 
 Demo Video: https://www.loom.com/share/1bb269c839b24beebc44857eabc7fd3e
 

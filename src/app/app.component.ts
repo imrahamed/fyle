@@ -30,13 +30,20 @@ export class AppComponent implements OnInit {
     this.loading = true
     
     if (city) {
-      this.dataService.getBanks(city).subscribe(
-        (res) => {
-          console.log(res);
-          this.data = res;
-          this.loading = false;
-        }
-      )
+      if (this.dataService.cachedData[city]) {
+        this.data = this.dataService.cachedData[city];
+        this.loading = false;
+      } else {
+        this.dataService.getBanks(city).subscribe(
+          (res) => {
+            console.log(res);
+            this.data = res;
+            this.dataService.cachedData[city] = res;
+            this.loading = false;
+          }
+        )
+      }
+      
     } else {
       this.data = [];
       this.loading = false;
