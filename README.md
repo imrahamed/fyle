@@ -1,6 +1,8 @@
 # Fyle
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+Demo url: http://vacuous-limit.surge.sh
+
+Demo Video: https://www.loom.com/share/1bb269c839b24beebc44857eabc7fd3e
 
 ## Development server
 
